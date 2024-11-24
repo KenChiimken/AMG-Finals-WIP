@@ -67,6 +67,11 @@ public class EnemyStats : MonoBehaviour
     //References the spawner and call the OnEnemyKilled method so that the enemies die the enemies alive will be decremented
     private void OnDestroy()
     {
+        if (!gameObject.scene.isLoaded) //Stops the spawning error from appearing when stopping play mode
+        {
+            return;
+        }
+
         EnemySpawner es= FindObjectOfType<EnemySpawner>();
         es.OnEnemyKilled();
     }

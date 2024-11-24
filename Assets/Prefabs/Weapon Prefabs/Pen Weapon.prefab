@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: b5759b1b60e22d34190b92747c11ee6f, type: 2}
-  destroyAfterSeconds: 3
+  destroyAfterSeconds: 2
 --- !u!50 &4114826631756003246
 Rigidbody2D:
   serializedVersion: 4
